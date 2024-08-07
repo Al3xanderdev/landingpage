@@ -1,25 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/styles.css'
+import Card from './components/Card/Card';
 
 function App() {
+
+  const [active, setActive] = useState("firstcard")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav>
+        <button onClick={() => setActive("firstcard")}>One</button>
+        <button onClick={() => setActive("secondcard")}>Two</button>
+        <button onClick={() => setActive("thirdcard")}>Three</button>
+      </nav>
+      <div>
+        {active === "firstcard" && <Card title='1' />}
+        {active === "secondcard" && <Card title='2' />}
+        {active === "thirdcard" && <Card title='3' />}
+      </div>
+    </>
   );
 }
 
