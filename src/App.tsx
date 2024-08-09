@@ -12,7 +12,8 @@ import gitbranch_icon from './components/res/git-branch-01.svg'
 import filecheck_icon from './components/res/file-check-02.svg'
 import users_icon from './components/res/users-02.svg'
 import ruble_icon from './components/res/currency-ruble-circle.svg'
-
+import IntroPage from './components/IntroPage/IntroPage';
+import ModulePage from './components/ModulePage/ModulePage';
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
 
   return (
     <>
+      <IntroPage />
+      <ModulePage />
+
       <nav className='header'>
         <button className="button" onClick={() => setActive("firstcard")}>
           <img className='btnpic' src={alignleft_icon} alt='' />
