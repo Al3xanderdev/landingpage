@@ -223,7 +223,7 @@
 }
 
 .maindiv {
-  padding: 20px 64px;
+  padding: 90px 64px;
 }
 
 .div1 {
@@ -344,6 +344,11 @@
   height: 140px;
 }
 
+.div2_1text {
+  display: flex;
+  flex-direction: column;
+}
+
 .div2_2_1text1 {
   align-self: stretch;
 
@@ -417,7 +422,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  margin-top: 50px;
+  margin-top: 30px;
   
   justify-items: center;
   justify-content: center;

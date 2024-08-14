@@ -24,13 +24,17 @@ const ModulePage: React.FC = () => {
         <div className='div2_2'>
           <div className='div2_2_1'>
             <img className='div2_2_1pic' src={panel_icon} alt='' />
-            <div className='div2_2_1text1'>Простота интерфейса</div>
-            <div className='div2_2_1text2'>Интуитивно понятный и минималистичный интерфейс позволяет пользователям без специальных навыков легко освоить работу в нашем портале.</div>
+            <div className='div2_2_1text'>
+              <div className='div2_2_1text1'>Простота интерфейса</div>
+              <div className='div2_2_1text2'>Интуитивно понятный и минималистичный интерфейс позволяет пользователям без специальных навыков легко освоить работу в нашем портале.</div>
+            </div>
           </div>
           <div className='div2_2_2'>
             <img className='div2_2_2pic' src={hierarchy_icon} alt='' />
-            <div className='div2_2_2text1'>Централизованность информации</div>
-            <div className='div2_2_2text2'>Вся информация аккумулируется в одной системе, обеспечивая удобный доступ к этапам согласования и перепискам по проекту.</div>
+            <div className='div2_2_1text'>
+              <div className='div2_2_2text1'>Централизованность информации</div>
+              <div className='div2_2_2text2'>Вся информация аккумулируется в одной системе, обеспечивая удобный доступ к этапам согласования и перепискам по проекту.</div>
+            </div>                 
           </div>
         </div>
       </div>
